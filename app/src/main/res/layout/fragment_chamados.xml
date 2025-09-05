@@ -1,0 +1,179 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+<!--    <LinearLayout-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/edtNome"-->
+<!--            android:hint="Nome *"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:minHeight="48dp"-->
+<!--            android:layout_marginBottom="8dp"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/edtTelefone"-->
+<!--            android:hint="Telefone *"-->
+<!--            android:inputType="phone"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:minHeight="48dp"-->
+<!--            android:layout_marginBottom="8dp"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/edtEmail"-->
+<!--            android:hint="Email *"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:minHeight="48dp"-->
+<!--            android:layout_marginBottom="8dp"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/edtDescricao"-->
+<!--            android:hint="Descreva o problema *"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:minHeight="96dp"-->
+<!--            android:gravity="top"-->
+<!--            android:layout_marginBottom="8dp"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtDataHora"-->
+<!--            android:text="Data e Hora: Atual"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingTop="8dp"-->
+<!--            android:layout_marginBottom="8dp"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtLocalizacao"-->
+<!--            android:text="Localização: Atual"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingTop="8dp"-->
+<!--            android:layout_marginBottom="8dp"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnAdicionarImagem"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Adicionar Imagem"-->
+<!--            android:layout_marginBottom="8dp"/>-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageSelecionada"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:background="#DDDDDD"-->
+<!--            android:layout_marginBottom="12dp"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnConcluir"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Concluir"/>-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar Chamado"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:hint="Nome *"
+            android:background="@color/orange"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@id/titulo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/edtTelefone"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:hint="Telefone *"
+            android:background="@color/orange"
+            android:inputType="phone"
+            app:layout_constraintTop_toBottomOf="@id/edtNome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:hint="Email *"
+            android:background="@color/orange"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@id/edtTelefone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/edtDescricao"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:hint="Descreva o problema *"
+            android:gravity="top"
+            android:background="@color/orange"
+            android:inputType="textMultiLine"
+            app:layout_constraintTop_toBottomOf="@id/edtEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/txtDataHora"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Data e Hora: Atual"
+            app:layout_constraintTop_toBottomOf="@id/edtDescricao"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/txtLocalizacao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Localização: Atual"
+            app:layout_constraintTop_toBottomOf="@id/txtDataHora"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnConcluir"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="Concluir"
+            android:backgroundTint="@color/orange"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/txtLocalizacao"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.038" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/edtEmail"
         android:layout_width="390dp"
         android:layout_height="46dp"
         android:background="@color/orange"
@@ -53,18 +53,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="19dp"
-        android:text="Digite seu CPF"
+        android:text="Digite seu Nome"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail"
         app:layout_constraintVertical_bias="0.0" />
 
 
     <EditText
-        android:id="@+id/editTextText7"
+        android:id="@+id/edtNome"
         android:background="@color/orange"
         android:layout_width="390dp"
         android:layout_height="46dp"
@@ -87,10 +87,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
+        app:layout_constraintTop_toBottomOf="@+id/edtNome" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/edtTelefone"
         android:layout_width="390dp"
         android:layout_height="46dp"
         android:background="@color/orange"
@@ -114,11 +114,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3"
+        app:layout_constraintTop_toBottomOf="@+id/edtTelefone"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/edtRua"
         android:background="@color/orange"
         android:layout_width="390dp"
         android:layout_height="46dp"
@@ -142,11 +142,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.036"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4"
+        app:layout_constraintTop_toBottomOf="@+id/edtRua"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextText5"
+        android:id="@+id/edtBairro"
         android:background="@color/orange"
         android:layout_width="390dp"
         android:layout_height="46dp"
@@ -171,11 +171,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.039"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText5"
+        app:layout_constraintTop_toBottomOf="@+id/edtBairro"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextText6"
+        android:id="@+id/edtCidade"
         android:background="@color/orange"
         android:layout_width="390dp"
         android:layout_height="46dp"
@@ -199,11 +199,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.036"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText6"
+        app:layout_constraintTop_toBottomOf="@+id/edtCidade"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/edtSenha"
         android:background="@color/orange"
         android:layout_width="390dp"
         android:layout_height="46dp"
@@ -218,7 +218,7 @@
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_register"
         app:cornerRadius="0dp"
         android:layout_width="168dp"
         android:layout_height="62dp"

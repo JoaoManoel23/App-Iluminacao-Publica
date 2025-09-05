@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/feedFragment"
+        android:icon="@drawable/baseline_access_time_24"
+        android:title="Feed" />
+
+    <item
+        android:id="@+id/mapaFragment"
+        android:icon="@drawable/baseline_access_time_24"
+        android:title="Mapa" />
+
+    <item
+        android:id="@+id/chamadosFragment"
+        android:icon="@drawable/baseline_access_time_24"
+        android:title="Chamados" />
+</menu>

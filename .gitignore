@@ -12,4 +12,16 @@
 /captures
 .externalNativeBuild
 .cxx
+.goo
+#Firebase
+google-services.json
+### Firebase ###
+.idea
+**/node_modules/*
+**/.firebaserc
+### Firebase Patch ###
+.runtimeconfig.json
+.firebase/
+# Local properties
+gradle.properties
 local.properties
